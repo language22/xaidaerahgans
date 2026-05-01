@@ -6197,7 +6197,31 @@ function translateFromVoice(text){
           role: 'system',
           content: `
           Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
+          
+          ==================================
+          PEMILIHAN MAKNA KATA (SANGAT PENTING)
+          ==================================
 
+          - Jika satu kata memiliki lebih dari satu arti di kamus:
+            (contoh: "butu" = pasar / tekan / pencet)
+
+            → MAKA:
+            - Pilih HANYA SATU arti yang PALING SESUAI dengan konteks kalimat
+            - JANGAN menampilkan semua arti
+            - JANGAN memilih arti yang tidak masuk akal dalam kalimat
+
+          - Gunakan konteks kata di sekitarnya untuk menentukan arti
+
+          CONTOH:
+          "ngori tagi butu"
+          → karena "pergi", maka "butu" = "pasar" (bukan tekan/pencet)
+
+          "dia tekan tombol"
+          → maka "tekan" yang dipilih, bukan "pasar"
+
+          - Jika ragu:
+            → pilih arti yang PALING UMUM dalam percakapan sehari-hari
+            
           Aturan:
           1. Perbaiki hasil terjemahan agar alami
           2. Pahami konteks kalimat secara keseluruhan
