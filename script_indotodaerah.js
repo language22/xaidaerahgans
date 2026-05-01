@@ -185,7 +185,6 @@
         {"ind":"sekolah","ter":"sekolah", "makian": "sikolah", "galela": "sikola", "img":"https://img.pikbest.com/illustration/20241222/a-colorful-cartoon-school-building-with-a-playground_11289214.jpg!w700wp"},
         {"ind":"kantor","ter":"kantor","makian": "kantor", "galela": "kantor", "img":"https://lh5.googleusercontent.com/proxy/-mdbKICq4ZgR5eoxcHqz6JovCDL0QGyNfwhYqEHYuMWa3PoCkaXwIu5xwSP3caM-vuQw5u6VivnOCWiz0kKxcrG1-WZbxwiHWmHUzN72E9OKTl5XfmyM"},
         {"ind":"pasar","ter":"butu","makian": "pasar", "galela": "pasar", "img":"https://st2.depositphotos.com/25067502/49278/v/1600/depositphotos_492781278-stock-illustration-organic-food-market-street-people.jpg"},
-        {"ind":"toko","ter":"toko","makian": "", "galela": "", "img":"https://www.gamelab.id/uploads/modules/NEWS/345/ritel.png?1606465422560"},
         {"ind":"restoran","ter":"restoran","makian": "", "galela": "", "img":"https://previews.123rf.com/images/denayunebgt/denayunebgt2210/denayunebgt221000819/193230467-italian-food-restaurant-or-cafeteria-with-people-eating-traditional-italy-dishes-pizza-or-pasta-in.jpg"},
         {"ind":"rumah sakit","ter":"rumah sakit","makian": "", "galela": "", 	"img":"https://pic.pikbest.com/02/18/68/49F888piCfwA.jpg!bw700"},
         {"ind":"masjid","ter":"sigi","makian": "sigi", "galela": "sigi", "img":"https://media.istockphoto.com/id/693541694/id/vektor/kartun-anak-anak-bahagia-merayakan-idul-fitri-di-taman-bersama-masjid.jpg?s=612x612&w=0&k=20&c=bvUFH_ruEp1ds_z0Yc_vVbTQkJYSfN4kpqhDWocCMz8="},
@@ -515,7 +514,7 @@
         {"ind":"daun kelapa","ter":"igo marau","makian": "", "galela": "igo ma'soka"},
         {"ind":"daun pisang","ter":"koi marau","makian": "nillu", "galela": "gole ma'soka"},
         {"ind":"putri malu","ter":"","makian": "", "galela": "gogiolo"},
-        {"ind":"bunga","ter":"saya","makian": "bungan", "galela": "leru/bungan","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcoZAUNQqfK9vtDNprAkkFQTzKQlFtwua2Q&s"},
+        {"ind":"bunga","ter":"sa'ya","makian": "bungan", "galela": "leru/bungan","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcoZAUNQqfK9vtDNprAkkFQTzKQlFtwua2Q&s"},
         {"ind":"rumput","ter":"gofu","makian": "ddawa", "galela": "fati/ngangaru","img":"https://i0.wp.com/ciputrahospital.com/wp-content/uploads/2025/02/shutterstock_1907429110-1.jpg?resize=1024%2C768&ssl=1"},
         {"ind":"rumput jepang","ter":"oyot","makian": "taki", "galela": "","img":"https://cdn1-production-images-kly.akamaized.net/TTNeJ_LFV5C0YO-sNo3fUcVSVWQ=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3981594/original/032990800_1648787088-eilis-garvey-MskbR8VLNrA-unsplash_1_.jpg"},
         {"ind":"akar","ter":"wutu","makian": "utu", "galela": "ngutu","img":"https://cdn1-production-images-kly.akamaized.net/TTNeJ_LFV5C0YO-sNo3fUcVSVWQ=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3981594/original/032990800_1648787088-eilis-garvey-MskbR8VLNrA-unsplash_1_.jpg"},
@@ -614,7 +613,7 @@
         {"ind":"bihun","ter":"bihun","makian": "", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScrdpLvKC2NmhPkQ8hhbzmVf3FzE5EL15EUg&s"},
         {"ind":"sagu","ter":"huda","makian": "baku", "galela": "peda","img":"https://upload.wikimedia.org/wikipedia/id/d/d7/Sagu_lempeng.jpg"},
         {"ind":"tempe","ter":"tempe","makian": "", "galela": "","img":"https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/a96dc8e08248133e3da0b011f533a5ae/Derivates/281033d21ee6f68fc14412a62302264d1e06c36d.jpg"},
-        {"ind":"tahu","ter":"waro","makian": "wado", "galela": "nako","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHs3orMjV7MR5KcdqtREW_C3F73lKI5R-rA&s"},
+        {"ind":"tahu","ter":"waro","makian": "wado", "galela": "na'ko","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHs3orMjV7MR5KcdqtREW_C3F73lKI5R-rA&s"},
         {"ind":"sate","ter":"sate","makian": "", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvZZ9CtNx4kavEGjYNtl1mx--BvAveo9KfLIxDOXhparA07N2PCszR2aBcqTpBIkf5o4&usqp=CAU"},
         {"ind":"bakso","ter":"bakso","makian": "", "galela": "","img":"https://awsimages.detik.net.id/community/media/visual/2019/08/12/dca21bf3-923c-486f-bc2e-a3dcd759b1df_43.jpeg?w=600&q=90"},
         {"ind":"nugget","ter":"nugget","makian": "", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sgXThPGwG4_DwNe0s5aeSCNMI2yF-MAe83G4t08Sn1pUhlQBosob_zbMaP6IpBq4EZA&usqp=CAU"},
@@ -1004,7 +1003,7 @@
         {"ind":"hitam","ter":"kokotu","makian": "kuda", "galela": "dha tata'ro"},
         {"ind":"hitam legam","ter":"","makian": "burat", "galela": ""},
         {"ind":"putih","ter":"bubudo","makian": "bulang", "galela": "dha are"},
-        {"ind":"abu-abu","ter":"fika-fika","makian": "tat'tapin", "galela": "da kakapo"},
+        {"ind":"abu-abu","ter":"fika-fika","makian": "tat'tapin", "galela": "dha kakapo"},
         {"ind":"cokelat","ter":"soklat","makian": "kakao", "galela": "dha sokulati"},
         {"ind":"jingga","ter":"jingga","makian": "jingga", "galela": "dha jijiga"},  
         {"ind":"ungu","ter":"wung","makian": "", "galela": ""},
@@ -1519,7 +1518,7 @@
       "Kata Depan": [
         {"ind":"di","ter":"toma","makian": "ni", "galela": "ka"},
         {"ind":"ke","ter":"toma","makian": "", "galela": "i hiye daku"},
-        {"ind":"dari","ter":"saka","makian": "", "galela": "o"},
+        {"ind":"dari","ter":"saka","makian": "", "galela": ""},
         {"ind":"dengan","ter":"se","makian": "lo", "galela": "de"},
         {"ind":"dengan","ter":"sema","makian": "", "galela": ""},
         {"ind":"untuk","ter":"kanggo","makian": "", "galela": "mangale"},
@@ -1672,7 +1671,6 @@
         {"ind":"pernah","ter":"parnah","makian": "", "galela": ""},
         {"ind":"bisa","ter":"dadi","makian": "nahan", "galela": "dadi"},
         {"ind":"bisa","ter":"dadi","makian": "han", "galela": ""},
-        {"ind":"mampu","ter":"poha","makian": "", "galela": "aku"},
         {"ind":"sanggup","ter":"poha","makian": "", "galela": "mangaku"},
         {"ind":"berani","ter":"barani","makian": "barani", "galela": "tomole"},
         {"ind":"berada","ter":"berada","makian": "", "galela": ""}
@@ -2000,7 +1998,7 @@
         {"ind":"bersaing","ter":"imaku lawang","makian": "", "galela": ""},
         {"ind":"bumbu","ter":"rampa rampa","makian": "rampa", "galela": ""},
         {"ind":"buncit","ter":"deke","makian": "bodoirube", "galela": "deke"},
-        {"ind":"berbunga","ter":"saya","makian": "danama", "galela": "leru"},
+        {"ind":"berbunga","ter":"sa'ya","makian": "danama", "galela": "leru"},
         {"ind":"bungkuk","ter":"fugu","makian": "fugu", "galela": "ruku"},
         {"ind":"buntal","ter":"bibi","makian": "bekebiki", "galela": ""},
         {"ind":"buntung","ter":"popo","makian": "popo", "galela": ""},  
@@ -4004,7 +4002,7 @@
         {"ind":"menolong","ter":"dagali","makian": "", "galela": ""},
         {"ind":"menoleh","ter":"nyodi","makian": "", "galela": ""},
         {"ind":"menombak","ter":"","makian": "sagu", "galela": "tudu"},
-        {"ind":"memencet","ter":"butu","makian": "", "galela": ""},
+        {"ind":"memencet","ter":"bu'tu","makian": "", "galela": ""},
         {"ind":"menukar","ter":"tiyadi","makian": "tuka", "galela": ""},
         {"ind":"menukarkan","ter":"sitiyadi","makian": "", "galela": ""},
         {"ind":"menukas","ter":"sitola","makian": "", "galela": ""},
@@ -4098,6 +4096,7 @@
         {"ind":"melintas","ter":"","makian": "", "galela": "tola"},
         {"ind":"menggiring","ter":"gasa","makian": "", "galela": ""},
         {"ind":"mampus","ter":"sone","makian": "", "galela": ""},
+        {"ind":"mampu","ter":"","makian": "", "galela": "a'ku"},
         {"ind":"meliuk","ter":"","makian": "", "galela": "moromu"},
         {"ind":"melongo","ter":"","makian": "", "galela": "tanana"},
         {"ind":"melotot","ter":"janga lako","makian": "", "galela": ""},
@@ -4608,7 +4607,7 @@
         {"ind":"pelayan","ter":"","makian": "", "galela": "sowohi"},
         {"ind":"pelet","ter":"guna guna","makian": "", "galela": "bodiga"},
         {"ind":"penasaran","ter":"ginado","makian": "penasaran", "galela": "gugutu"},
-        {"ind":"pencet","ter":"butu","makian": "butu", "galela": "tuku"},
+        {"ind":"pencet","ter":"bu'tu","makian": "bu'tu", "galela": "tuku"},
         {"ind":"pencar","ter":"fiyaro","makian": "", "galela": "si'biau"},
         {"ind":"penyakit","ter":"ipanyake","makian": "pasugo", "galela": "panyake"},
         {"ind":"penyangga","ter":"madiki","makian": "", "galela": ""},
@@ -5429,6 +5428,7 @@
         {"ind":"terapung","ter":"","makian": "myaling", "galela": "bao"},
         {"ind":"terbang","ter":"isoro","makian": "o'pa", "galela": "soso"},
         {"ind":"terbang","ter":"soro","makian": "", "galela": ""},
+        {"ind":"tekan","ter":"bu'tu","makian": "", "galela": ""},
         {"ind":"terbirit-birit","ter":"","makian": "", "galela": "sahunga"},
         {"ind":"terbit","ter":"pala","makian": "pudal", "galela": ""},
         {"ind":"terpelanting","ter":"itebu","makian": "", "galela": ""},
@@ -5596,7 +5596,7 @@
         {"ind":"tengah malam","ter":"","makian": "lusama", "galela":"putu tongiraba"},
         {"ind":"tengah hari","ter":"wange konora","makian": "", "galela": ""},
         {"ind":"tenggorokannya","ter":"ihulukum","makian": "", "galela": ""},
-        {"ind":"tidak penuh","ter":"","makian": "", "galela": "buku"},
+        {"ind":"tidak penuh","ter":"","makian": "", "galela": "bukuu"},
         {"ind":"tengik","ter":"ikarasi","makian": "", "galela": ""},
         {"ind":"teka-teki","ter":"rai","makian": "", "galela": "cumu"},
         {"ind":"teken","ter":"","makian": "", "galela": "si'bitu"},
@@ -6237,6 +6237,7 @@ function translateFromVoice(text){
           "2 rumah" → "rumah 2"
           "21 ikan merah" → "ikan merah 21"
           "21 ayam kuning" → "ayam kuning 21"
+          "seekor kucing putih" → "kucing putih seekor"
 
           ----------------------------------
 
@@ -6271,7 +6272,8 @@ function translateFromVoice(text){
           "rumah saya" → "saya rumah"  
           "buah kelapa" → "kelapa buah"  
           "belakang rumah" → "rumah belakang"  
-          "depan rumah" → "rumah depan"  
+          "depan rumah" → "rumah depan"
+          "seekor kucing" → "kucing seekor" 
 
           ----------------------------------
 
@@ -6317,70 +6319,28 @@ function translateFromVoice(text){
 
           ----------------------------------
 
-          8. ATURAN KALIMAT TANYA (PENTING)
-
-          Jika ada kata tanya, atur posisi sebagai berikut:
-
-          A. KATA TANYA DI DEPAN:
+          8. ATURAN KALIMAT TANYA
 
           Jika ada kata:
           "apa", "kapan", "apakah", "mengapa"
-
           → MAKA:
           kata tersebut HARUS di paling depan kalimat
 
-          CONTOH:
-          "kamu makan apa"
-          → "apa kamu makan"
-
-          "kapan kamu pergi"
-          → tetap "kapan kamu pergi"
-
-          "mengapa dia datang"
-          → tetap "mengapa dia datang"
-
-          ----------------------------------
-
-          B. KATA TANYA DI BELAKANG:
-
           Jika ada kata:
           "bagaimana", "dimana", "dari mana", "siapa"
-
           → MAKA:
           kata tersebut HARUS di paling belakang kalimat
-
-          CONTOH:
-          "bagaimana kabar kamu"
-          → "kamu kabar bagaimana"
-
-          "kamu dimana"
-          → "kamu dimana" (sudah benar di belakang)
-
-          "kamu dari mana"
-          → "kamu dari mana"
-
-          "siapa nama kamu"
-          → "kamu nama siapa"
-
-          ----------------------------------
-
-          C. PRIORITAS:
-
-          - Aturan kata tanya dijalankan SETELAH semua aturan lain
-          - Jangan ubah arti
-          - Hanya ubah posisi kata tanya
 
           ----------------------------------
 
           ==================================
           ATURAN PENTING
           ==================================
-
-          - Jangan tambah kata
-          - Jangan hapus kata (kecuali angka duplikat)
-          - Jangan ubah arti
-          - Hanya ubah posisi
-          - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali jika di inputan angka hanya sekali)
+          - DILARANG mengulang kata
+          - Setiap kata hanya boleh muncul SATU KALI sesuai input
+          - Jika ada kata yang muncul lebih dari sekali akibat penyusunan ulang → HAPUS duplikatnya
+          - Gunakan hanya kata yang ada di "Hasil dari kamus", jangan menambah atau menggandakan
+          - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali, jika di inputan angka hanya sekali)
           - Negasi SELALU pindah ke belakang kata kerja atau objek
 
           ==================================
@@ -6431,6 +6391,8 @@ function translateFromVoice(text){
     throw err;
   }
 }
+
+
   // ======================
   // 🔤 countAllVocabulary: hitung total kosakata di DICT
   // ======================
