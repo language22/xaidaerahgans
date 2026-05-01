@@ -1234,7 +1234,7 @@
         {"ind":"milik orang itu","ter":"","makian": "", "galela": ""},
         {"ind":"milik siapa","ter":"","makian": "", "galela": ""},
         {"ind":"milik teman","ter":"","makian": "", "galela": ""},
-        {"ind":"milik","ter":"duwe","makian": "", "galela": ""}
+        {"ind":"milik","ter":"","makian": "", "galela": ""}
       ],
       "Penunjuk": [
         {"ind":"penunjuk","ter":"","makian": "", "galela": "si'dudumu"},
@@ -1652,7 +1652,7 @@
         {"ind":"lagi","ter":"moju","makian": "nak", "galela": "si"},
         {"ind":"terus","ter":"turus","makian": "", "galela": "gila"},
         {"ind":"tetap","ter":"tatap","makian": "hongkak", "galela": ""},
-        {"ind":"punya","ter":"duwe","makian": "", "galela": "ena"},
+        {"ind":"punya","ter":"","makian": "", "galela": "ena"},
         {"ind":"ada","ter":"sema","makian": "ada", "galela": "ena"},
         {"ind":"tidak ada","ter":"kama","makian": "malo", "galela": "hiwa"},
         {"ind":"dapat","ter":"dero","makian": "katala", "galela": "make"},
