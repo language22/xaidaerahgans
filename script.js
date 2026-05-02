@@ -782,7 +782,7 @@
         {"ind":"mendengarkan","ter":"ise","makian": "malonga", "galela": "si'ise","img":"https://i0.wp.com/www.harakatuna.com/wp-content/uploads/2022/11/ilustrasi-orang-bicara-ini-zodiak-yang-terkenal-super-manis-saat-diajak-ngobrol.jpg?resize=696%2C391&ssl=1"},
         {"ind":"melihat","ter":"sorinyodi","makian": "tono", "galela": "takelelo","img":"https://img-cdn.medkomtek.com/qFeEv2iPoRd_FywuI7oXnTB-Nk4=/510x395/smart/filters:quality(100):format(webp)/article/xQFCwccyptoTFhpq8thGW/original/086987600_1577875819-Mata-Silau-Saat-Melihat-Cahaya-Terang-Kapan-Harus-Khawatir-shutterstock_736460488.jpg"},
         {"ind":"melihat","ter":"nyodi","makian": "tono", "galela": "kelelo"},
-        {"ind":"melihat","ter":"tohida","makian": "nam", "galela": ""},
+        {"ind":"saya melihat","ter":"tohida","makian": "nam", "galela": ""},
         {"ind":"melihat","ter":"hida","makian": "nam", "galela": ""},
         {"ind":"merasa","ter":"rasa","makian": "sosam", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDbYTnuVMIgb2W_B52NxZNJ_gHk8ZFnDlnGY4KTrGm_cNtOW033Tg0ClEff4MWMeNbq2Q&usqp=CAU"},
         {"ind":"memegang","ter":" ","makian": "loi", "galela": "coho","img":"https://stiba.ac.id/wp-content/uploads/2016/02/mendidik-anak-dalam-islam.jpg"},
@@ -1193,16 +1193,24 @@
       "orang": [
         {"ind":"ia","ter":"ngone","makian": "mena", "galela": ""},
         {"ind":"saya","ter":"ngori","makian": "k", "galela": "ngohi"},
+        {"ind":"saya","ter":"ngori","makian": "k", "galela": "noi"},
         {"ind":"saya laki-laki","ter":"fangare","makian": "", "galela": ""},
         {"ind":"saya perempuan","ter":"fajaru","makian": "", "galela": ""},
         {"ind":"aku","ter":"ngori","makian": "yak", "galela": "ngohi"},
-        {"ind":"kamu","ter":"ngon","makian": "au", "galela": "ngona/ngini"},
-        {"ind":"engkau","ter":"ngon","makian": "ni", "galela": "ngona/ngini"},
-        {"ind":"anda","ter":"ngon","makian": "au", "galela": "ngona/ngini"},
-        {"ind":"dia sendiri","ter":"","makian": "ile", "galela": "ngona/ngini"},
-        {"ind":"dia","ter":"","makian": "ido", "galela": "ngona/ngini"},
-        {"ind":"dia laki-laki","ter":"una","makian": "amanim", "galela": "to'una/wo/awi"},
-        {"ind":"dia perempuan","ter":"mina","makian": "amanim", "galela": "to'muna/mo/ami"},
+        {"ind":"kamu","ter":"ngon","makian": "au", "galela": "ngona"},
+        {"ind":"kamu","ter":"ngon","makian": "au", "galela": "ngini"},
+        {"ind":"anda","ter":"ngon","makian": "ni", "galela": "ngona"},
+        {"ind":"anda","ter":"ngon","makian": "au", "galela": "ngini"},
+        {"ind":"dia sendiri","ter":"","makian": "ile", "galela": "ngini"},
+        {"ind":"dia","ter":"","makian": "ido", "galela": "ngona"},
+        {"ind":"dia","ter":"","makian": "ido", "galela": "ngini"},
+        {"ind":"dia laki-laki","ter":"una","makian": "amanim", "galela": "to'una"},
+        {"ind":"dia laki-laki","ter":"una","makian": "amanim", "galela": "to'una"},
+        {"ind":"dia laki-laki","ter":"una","makian": "amanim", "galela": "wo"},
+        {"ind":"dia laki-laki","ter":"una","makian": "amanim", "galela": "awi"},
+        {"ind":"dia perempuan","ter":"mina","makian": "amanim", "galela": "ami"},
+        {"ind":"dia perempuan","ter":"mina","makian": "amanim", "galela": "to'muna"},
+        {"ind":"dia perempuan","ter":"mina","makian": "amanim", "galela": "mo"},
         {"ind":"kami","ter":"ngom","makian": "am", "galela": "to ngomi"},  
         {"ind":"kami","ter":"ngom","makian": "titanit", "galela": "to ngomi"},
         {"ind":"kita","ter":"ngone","makian": "titanit", "galela": "ngone/nanga"},
@@ -1407,7 +1415,7 @@
         {"ind":"sebentar","ter":"caicai","makian": "", "galela": "bole da"},
         {"ind":"segera","ter":"murari","makian": "", "galela": ""},
         {"ind":"setelah","ter":"sawise","makian": "togu", "galela": ""},
-        {"ind":"sebelum","ter":"sadurunge","makian": "", "galela": ""},
+        {"ind":"sebelum","ter":"sadurunge","makian": "", "galela": "wasi"},
         {"ind":"sebelum","ter":"kama","makian": "", "galela": ""},
         {"ind":"baru saja","ter":"bar wae","makian": "", "galela": "asa'ku"},
         {"ind":"dadakan","ter":"","makian": "", "galela": "si'todoka"},
@@ -1629,7 +1637,8 @@
     },
     "Kata Bantu": {
       "Kata Kerja Bantu": [
-        {"ind":"sedang","ter":"sedang","makian": "", "galela": ""},
+        {"ind":"sedang","ter":"","makian": "", "galela": ""},
+        {"ind":"yang","ter":"","makian": "", "galela": ""},
         {"ind":"akan","ter":"sari","makian": "toba", "galela": "done"},
         {"ind":"akankah","ter":"o sari","makian": "toba", "galela": ""},
         {"ind":"telah","ter":"raima","makian": "", "galela": ""},
@@ -3459,7 +3468,7 @@
         {"ind":"loyal","ter":"ta-at","makian": "", "galela": ""},
         {"ind":"loyang","ter":"susaha","makian": "", "galela": ""},
         {"ind":"leleh","ter":"","makian": "kihis", "galela": ""},
-        {"ind":"lupa","ter":"","makian": "mallingak", "galela": ""},
+        {"ind":"lupa","ter":"","makian": "mallingak", "galela": "wosa"},
         {"ind":"lidah api","ter":"","makian": "ninolonco", "galela": ""},
         {"ind":"lipstik","ter":"","makian": "smenken", "galela": ""},
         {"ind":"luka hati","ter":"","makian": "yo'com ho'nas", "galela": ""},
@@ -6226,7 +6235,7 @@ function translateFromVoice(text){
           ATURAN IMBUHAN
           ==================================
 
-          - Jika kata seperti "ma", "i", "o" tidak ada di kamus:
+          - Jika kata seperti "ma", "i", "o", "ka", "k", "ya", "yi", "to", "ta" tidak ada di kamus:
             → abaikan imbuhan
             → gunakan kata dasar
 
