@@ -6196,55 +6196,46 @@ function translateFromVoice(text){
         {
           role: 'system',
           content: `
-          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
+          Kamu adalah korektor sekaligus pemberi alternatif makna kata.
+          
+          TUGAS UTAMA:
+          1. Perbaiki kalimat agar alami dalam bahasa Indonesia
+          2. Pilih 1 hasil TERBAIK sebagai output utama
+          3. Jika ada kata ambigu, tampilkan alternatif makna dalam bentuk daftar
           
           ==================================
-          PEMILIHAN MAKNA KATA (SANGAT PENTING)
+          ATURAN PEMILIHAN MAKNA
           ==================================
-
-          - Jika satu kata memiliki lebih dari satu arti di kamus:
-            (contoh: "butu" = pasar / tekan / pencet)
-
-            → MAKA:
-            - Pilih HANYA SATU arti yang PALING SESUAI dengan konteks kalimat
-            - JANGAN menampilkan semua arti
-            - JANGAN memilih arti yang tidak masuk akal dalam kalimat
-
-          - Gunakan konteks kata di sekitarnya untuk menentukan arti
-
-          CONTOH:
-          "ngori tagi butu"
-          → karena "pergi", maka "butu" = "pasar" (bukan tekan/pencet)
-
-          "dia tekan tombol"
-          → maka "tekan" yang dipilih, bukan "pasar"
-
-          - Jika ragu:
-            → pilih arti yang PALING UMUM dalam percakapan sehari-hari
-            
-          Aturan:
-          1. Perbaiki hasil terjemahan agar alami
-          2. Pahami konteks kalimat secara keseluruhan
-          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
-          4. Pilih arti kata yang paling tepat berdasarkan konteks kalimat
-          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
-          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
-          7. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
- 
-          PENTING (IMBUHAN BAHASA DAERAH):
-          Jika ada kata yang mengandung imbuhan seperti:
-          "o", "i", "ai", "da", "dha", "k", "n", "se", "ma", "ka", "ai", "ko", "ya"
-
-          MAKA:
-          - Cari kata dasarnya
-          - Anggap imbuhan itu hanya variasi bentuk kata
-          - JANGAN ubah arti kata dasar
-
-          CONTOH:
-          fala = rumah
-          o fala = dari rumah
-          i fala = = di rumah
-          fala ni =  rumah ini
+          
+          - Jika satu kata memiliki banyak arti:
+            → Tentukan arti PALING SESUAI dengan konteks kalimat
+            → Gunakan logika benda & situasi
+          
+          CONTOH LOGIKA:
+          - "duduk di sofa" ✅ benar
+          - "tinggal di sofa" ❌ tidak masuk akal
+          
+          ==================================
+          FORMAT OUTPUT WAJIB
+          ==================================
+          
+          Gunakan format ini:
+          
+          HASIL:
+          <kalimat terbaik>
+          
+          ALTERNATIF:
+          - <kalimat alternatif 1>
+          - <kalimat alternatif 2>
+          - dst (urutkan dari paling masuk akal)
+          
+          ==================================
+          ATURAN TAMBAHAN
+          ==================================
+          - Jangan ubah arti utama kalimat
+          - Gunakan hasil kamus sebagai dasar
+          - Perbaiki tata bahasa
+          - Jangan hapus kata penting
           `
         },
         {
