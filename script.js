@@ -1234,7 +1234,7 @@
         {"ind":"milik orang itu","ter":"","makian": "", "galela": ""},
         {"ind":"milik siapa","ter":"","makian": "", "galela": ""},
         {"ind":"milik teman","ter":"","makian": "", "galela": ""},
-        {"ind":"milik","ter":"milik","makian": "", "galela": ""}
+        {"ind":"milik","ter":"","makian": "", "galela": ""}
       ],
       "Penunjuk": [
         {"ind":"penunjuk","ter":"","makian": "", "galela": "si'dudumu"},
@@ -1652,7 +1652,7 @@
         {"ind":"lagi","ter":"moju","makian": "nak", "galela": "si"},
         {"ind":"terus","ter":"turus","makian": "", "galela": "gila"},
         {"ind":"tetap","ter":"tatap","makian": "hongkak", "galela": ""},
-        {"ind":"punya","ter":"punya","makian": "", "galela": "ena"},
+        {"ind":"punya","ter":"","makian": "", "galela": "ena"},
         {"ind":"ada","ter":"sema","makian": "ada", "galela": "ena"},
         {"ind":"tidak ada","ter":"kama","makian": "malo", "galela": "hiwa"},
         {"ind":"dapat","ter":"dero","makian": "katala", "galela": "make"},
@@ -4002,7 +4002,7 @@
         {"ind":"menolong","ter":"dagali","makian": "", "galela": ""},
         {"ind":"menoleh","ter":"nyodi","makian": "", "galela": ""},
         {"ind":"menombak","ter":"","makian": "sagu", "galela": "tudu"},
-        {"ind":"memencet","ter":"butu","makian": "", "galela": ""},
+        {"ind":"memencet","ter":"bu tu","makian": "", "galela": ""},
         {"ind":"menukar","ter":"tiyadi","makian": "tuka", "galela": ""},
         {"ind":"menukarkan","ter":"sitiyadi","makian": "", "galela": ""},
         {"ind":"menukas","ter":"sitola","makian": "", "galela": ""},
@@ -4607,7 +4607,7 @@
         {"ind":"pelayan","ter":"","makian": "", "galela": "sowohi"},
         {"ind":"pelet","ter":"guna guna","makian": "", "galela": "bodiga"},
         {"ind":"penasaran","ter":"ginado","makian": "penasaran", "galela": "gugutu"},
-        {"ind":"pencet","ter":"butu","makian": "butu", "galela": "tuku"},
+        {"ind":"pencet","ter":"bu tu","makian": "butu", "galela": "tuku"},
         {"ind":"pencar","ter":"fiyaro","makian": "", "galela": "si'biau"},
         {"ind":"penyakit","ter":"ipanyake","makian": "pasugo", "galela": "panyake"},
         {"ind":"penyangga","ter":"madiki","makian": "", "galela": ""},
@@ -6196,69 +6196,66 @@ function translateFromVoice(text){
         {
           role: 'system',
           content: `
-          Kamu adalah AI penerjemah berbasis kamus + logika dunia nyata.
-          
+          Kamu adalah korektor sekaligus pemberi alternatif makna kata.
+
+          TUGAS UTAMA:
+          1. Perbaiki kalimat agar alami dalam bahasa Indonesia
+          2. Pilih 1 hasil TERBAIK sebagai output utama
+          3. Jika ada kata ambigu, tampilkan alternatif makna dalam bentuk daftar
+
           ==================================
-          TUGAS UTAMA
+          ATURAN PEMILIHAN MAKNA
           ==================================
+
+          - Jika satu kata memiliki banyak arti:
+            → Tentukan arti PALING SESUAI dengan konteks kalimat
+            → Gunakan logika benda & situasi
+
+          CONTOH LOGIKA:
+          - "duduk di sofa" ✅ benar
+          - "tinggal di sofa" ❌ tidak masuk akal
+
+          - "pergi pasar pagi ini" ✅ benar
+          - "pergi ke pasar pagi ini" ✅ benar
+
+          - "pergi pencet tombol lampu" ✅ benar
+          - "pergi pencet" ❌ tidak masuk akal
           
-          1. Gunakan SEMUA arti kata dari kamus
-          2. BUAT semua kemungkinan kalimat dari arti tersebut
-          3. JANGAN menghilangkan arti apapun
-          4. WAJIB memasukkan setiap arti ke dalam minimal 1 kalimat
-          5. Urutkan berdasarkan tingkat masuk akal
-          
-          ==================================
-          LOGIKA WAJIB (KERAS)
-          ==================================
-          
-          Gunakan logika manusia:
-          
-          - kursi → untuk duduk, BUKAN untuk tinggal
-          - rumah → untuk tinggal
-          - pasar → untuk pergi / belanja
-          - tombol → untuk menekan
-          
-          ❗ HUKUM PENTING:
-          Kalimat yang tidak masuk akal HARUS di bawah
-          
-          Contoh:
-          - "tinggal di kursi" ❌ sangat tidak masuk akal → taruh PALING BAWAH
-          - "pergi menekan" ❌ tidak jelas objek → di bawah
-          - "pergi ke pasar" ✅ paling atas
-          
+
           ==================================
           ATURAN IMBUHAN
           ==================================
-          
+
           - Jika kata seperti "ma", "i", "o" tidak ada di kamus:
             → abaikan imbuhan
             → gunakan kata dasar
-          
+
           - Jika ada di kamus sebagai satu unit:
             → gunakan sebagai satu arti
             contoh:
             "ma sunanga" = sebelah
-          
+
           ==================================
           FORMAT OUTPUT WAJIB
           ==================================
-          
+
+          Gunakan format ini:
+
           HASIL:
-          <kalimat paling masuk akal>
-          
+          <kalimat terbaik>
+
           ALTERNATIF:
-          1. <kalimat masuk akal lainnya>
-          2. <kalimat kurang masuk akal>
-          3. <kalimat tidak masuk akal>
-          
+          - <kalimat alternatif 1>
+          - <kalimat alternatif 2>
+          - dst (urutkan dari paling masuk akal)
+
           ==================================
-          LARANGAN
+          ATURAN TAMBAHAN
           ==================================
-          
-          - DILARANG menghilangkan arti dari kamus
-          - DILARANG membuat arti baru di luar kamus
-          - DILARANG mengulang kalimat yang sama
+          - Jangan ubah arti utama kalimat
+          - Gunakan hasil kamus sebagai dasar
+          - Perbaiki tata bahasa
+          - Jangan hapus kata penting
           `
         },
         {
@@ -6272,6 +6269,7 @@ function translateFromVoice(text){
           Hasil dari kamus:
           "${dictResult}"
 
+          Gunakan SEMUA arti untuk membuat semua kemungkinan kalimat.
           Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
           `
         }
