@@ -151,7 +151,7 @@ img.card-img-top {
 /* HP */
 @media (max-width: 560px) {
   .vocab-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
   }
 }
