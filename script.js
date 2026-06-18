@@ -8,7 +8,6 @@
   const DICT = {
     "Kata Benda": {
       "Keluarga": [
-        {"ind":"keluaru","ter":"sedihutu","makian":"ahali","galela":"duhutu"},
         {"ind":"keluarga","ter":"ahlii sedihutu","makian":"ahali","galela":"duhutu","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_krGSlIxN0gahOt467iC8PXg992rR_qI2Q&s"},
         {"ind":"ayah","ter":"baba","makian":"baba","galela":"baba","img":"https://img.freepik.com/premium-photo/3d-illustration-cartoon-character-with-happy-expression-his-face_1057-44581.jpg?w=360"},
         {"ind":"ibu","ter":"yaya","makian":"mama","galela":"meme","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4He4PNhcfLw2TeMeiGe8npE93OiWPjtpWmQ&s"},
@@ -4782,7 +4781,6 @@
         {"ind":"racun","ter":"raci","makian": "racing", "galela": "raci"},
         {"ind":"ragam","ter":"macang","makian": "", "galela": ""},
         {"ind":"rakyat","ter":"bala","makian": "", "galela": ""},
-        {"ind":"raden","ter":"dano","makian": "", "galela": ""},
         {"ind":"rakit","ter":"","makian": "dat", "galela": "rako"},
         {"ind":"rakus","ter":"danata","makian": "danata", "galela": "tanata"},
         {"ind":"rambu","ter":"tanda","makian": "", "galela": ""},
@@ -6544,6 +6542,14 @@ function speakSafe(text, rate = 1){
   speechSynthesis.speak(u);
 }
 
+let ALL_VOCAB_SORTED = null;
+
+function getSortedVocab(){
+  if(!ALL_VOCAB_SORTED){
+    ALL_VOCAB_SORTED = sortAZByInd(ALL_VOCAB);
+  }
+  return ALL_VOCAB_SORTED;
+}
 
   // ======================
   // 🪧 renderCategory: tampil kartu, pencarian, dan audio 1x/2x
@@ -6561,9 +6567,9 @@ function speakSafe(text, rate = 1){
   const prefixLoc = ($('searchPrefixLoc')?.value || '').toLowerCase().trim();
 
   const list =
-    (prefixInd || prefixLoc || search)
-      ? ALL_VOCAB
-      : ((DICT[category] && DICT[category][theme]) || []);
+  (prefixInd || prefixLoc || search)
+  ? getSortedVocab()
+  : ((DICT[category] && DICT[category][theme]) || []);
 
   const filtered = list.filter(it => {
 
@@ -6580,7 +6586,14 @@ function speakSafe(text, rate = 1){
     return combined.includes(search);
   });
 
-  const sorted = sortAZByInd(filtered);
+  const sorted = filtered;
+
+  const MAX_RENDER =
+  search.length === 1
+    ? 100
+    : 500;
+
+  const displayData = sorted.slice(0, MAX_RENDER);
 
   if(sorted.length === 0){
     cont.innerHTML = `<div class="p-3 text-muted">Tidak ditemukan hasil</div>`;
@@ -6589,7 +6602,7 @@ function speakSafe(text, rate = 1){
 
   const fragment = document.createDocumentFragment(); // 🚀 penting untuk 3000+
 
-  sorted.forEach(it => {
+  displayData.forEach(it => {
 
     const label = it[chosen] || '-';
 
@@ -6989,7 +7002,18 @@ if(scrollBtn){
 
     // search & choosebahasa interactions for cards
     $('btnSearch')?.addEventListener('click', ()=> renderCategory($('categorySelect')?.value, $('themeSelect')?.value));
-    $('searchWord')?.addEventListener('input', ()=> renderCategory($('categorySelect')?.value, $('themeSelect')?.value));
+
+    let searchDelay;
+    $('searchWord')?.addEventListener('input', ()=>{
+      clearTimeout(searchDelay);
+      searchDelay = setTimeout(()=>{
+        renderCategory(
+          $('categorySelect')?.value,
+          $('themeSelect')?.value
+        );
+      }, 150);
+    });
+
     $('choosebahasa')?.addEventListener('change', ()=> renderCategory($('categorySelect')?.value, $('themeSelect')?.value));
 
     // allCategorySelect change
