@@ -6542,14 +6542,6 @@ function speakSafe(text, rate = 1){
   speechSynthesis.speak(u);
 }
 
-let ALL_VOCAB_SORTED = null;
-
-function getSortedVocab(){
-  if(!ALL_VOCAB_SORTED){
-    ALL_VOCAB_SORTED = sortAZByInd(ALL_VOCAB);
-  }
-  return ALL_VOCAB_SORTED;
-}
 
   // ======================
   // 🪧 renderCategory: tampil kartu, pencarian, dan audio 1x/2x
@@ -6567,9 +6559,9 @@ function getSortedVocab(){
   const prefixLoc = ($('searchPrefixLoc')?.value || '').toLowerCase().trim();
 
   const list =
-  (prefixInd || prefixLoc || search)
-  ? getSortedVocab()
-  : ((DICT[category] && DICT[category][theme]) || []);
+    (prefixInd || prefixLoc || search)
+      ? ALL_VOCAB
+      : ((DICT[category] && DICT[category][theme]) || []);
 
   const filtered = list.filter(it => {
 
@@ -6586,14 +6578,7 @@ function getSortedVocab(){
     return combined.includes(search);
   });
 
-  const sorted = filtered;
-
-  const MAX_RENDER =
-  search.length === 1
-    ? 100
-    : 500;
-
-  const displayData = sorted.slice(0, MAX_RENDER);
+  const sorted = sortAZByInd(filtered);
 
   if(sorted.length === 0){
     cont.innerHTML = `<div class="p-3 text-muted">Tidak ditemukan hasil</div>`;
@@ -6602,7 +6587,7 @@ function getSortedVocab(){
 
   const fragment = document.createDocumentFragment(); // 🚀 penting untuk 3000+
 
-  displayData.forEach(it => {
+  sorted.forEach(it => {
 
     const label = it[chosen] || '-';
 
@@ -7002,18 +6987,7 @@ if(scrollBtn){
 
     // search & choosebahasa interactions for cards
     $('btnSearch')?.addEventListener('click', ()=> renderCategory($('categorySelect')?.value, $('themeSelect')?.value));
-
-    let searchDelay;
-    $('searchWord')?.addEventListener('input', ()=>{
-      clearTimeout(searchDelay);
-      searchDelay = setTimeout(()=>{
-        renderCategory(
-          $('categorySelect')?.value,
-          $('themeSelect')?.value
-        );
-      }, 150);
-    });
-
+    $('searchWord')?.addEventListener('input', ()=> renderCategory($('categorySelect')?.value, $('themeSelect')?.value));
     $('choosebahasa')?.addEventListener('change', ()=> renderCategory($('categorySelect')?.value, $('themeSelect')?.value));
 
     // allCategorySelect change
